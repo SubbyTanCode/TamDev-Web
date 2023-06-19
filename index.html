@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Home - TamDev</title>
+</head>
+<body id="body">
+
+    <!-- Home Page -->
+    <div id="Home" style="scroll-snap-align: start; height: 100vh; width: 100vw;">
+        <div style="position: absolute; width: 100%; height: 100%; opacity: 0.5;" id="overlayTop"></div>
+        
+            <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent1" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
+                <h1 id="txt1" style="color: white; font-weight: 300; font-size: 30px;"></h1>
+                <h1 id="txt2" style="color: white; font-weight: 700; font-size: 90px; margin-top: 10px"></h1>
+                
+                <h1 id="txt3" style="color: white; font-size: 25px; font-weight: 600; margin-top: -30px"></h1>
+                <h1 id="txt4" style="color: rgb(152, 152, 152); font-size: 20px; font-weight: 500; margin-top: 0px; width: 650px"></h1>
+                
+                <div style=" width: 350px; height: 80px; position: absolute; bottom: 50px;">
+                    <img onmouseenter="this.style.opacity = 1" onmouseleave="this.style.opacity = 0.8" onclick=" window.open('https://twitter.com/tamgamer97',' _blank') " title="Twitter Profile" id="TwitterIconRed" class="socialIcon" style="cursor: pointer; transition: 1s; opacity: 0; margin-top: 100px;" src="/Images/TwitterIconRed.png" >
+                    <img onmouseenter="this.style.opacity = 1" onmouseleave="this.style.opacity = 0.8" onclick=" window.open('https://github.com/TamGamer97',' _blank') " title="Github Profile" id="GithubIconRed" class="socialIcon" style="cursor: pointer; transition: 1s; opacity: 0; margin-top: 100px;" src="/Images/GithubiconRed.png" >
+                    <img onmouseenter="this.style.opacity = 1" onmouseleave="this.style.opacity = 0.8" onclick=" window.open('https://www.fiverr.com/tamgamer97',' _blank') " title="Fiverr Profile" id="FiverrIconRed" class="socialIcon" style="cursor: pointer; transition: 1s; opacity: 0; margin-top: 100px;" src="/Images/FiverrIconRed.png" >
+                </div>
+            </div>
+    
+        
+        
+        <div style="display: flex; height: 100vh;">
+            <div style="display: flex; align-items: center; margin-left: 10px;">
+                
+                <div onmouseover="menuTransform('enter')" class="hoverLine" id="hoverLine1" style="width: 8px; height: 200px; background-color: white; transition: 1s; border-radius: 10px; position: absolute;"></div>
+            </div>
+    
+                <div id="menuContents1" style="display: hidden; align-items: center; justify-content: center; flex-direction: column; height: 98%; width: 00px; opacity: 0; margin-left: 10px; transition: 1s;" >
+                    <div onclick="changePage(1)" onmouseenter="menuItemsHover('enter', 'HomeIcon1')" onmouseleave="menuItemsHover('leave', 'HomeIcon1')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="HomeIcon1" src="/Images/HomeIconSelected.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Home</h1>
+                    </div>
+                    <div onclick="changePage(2)" onmouseenter="menuItemsHover('enter', 'AboutIcon1')" onmouseleave="menuItemsHover('leave', 'AboutIcon1')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="AboutIcon1" src="/Images/AboutIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">About</h1>
+                    </div>
+                    <div onclick="changePage(3)" onmouseenter="menuItemsHover('enter', 'ProjectsIcon1')" onmouseleave="menuItemsHover('leave', 'ProjectsIcon1')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ProjectsIcon1" src="/Images/ProjectsIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Projects</h1>
+                    </div>
+                    <div onclick="changePage(4)" onmouseenter="menuItemsHover('enter', 'ServicesIcon1')" onmouseleave="menuItemsHover('leave', 'ServicesIcon1')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ServicesIcon1" src="/Images/ServicesIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Services</h1>
+                    </div>
+                    <div onclick="changePage(5)" onmouseenter="menuItemsHover('enter', 'ReviewsIcon1')" onmouseleave="menuItemsHover('leave', 'ReviewsIcon1')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ReviewsIcon1" src="/Images/ReviewsIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Reviews</h1>
+                    </div>
+                </div>
+    
+        </div>
+
+    </div>
+
+    <!-- ABOUT PAGE -->
+    <div id="About" style="height: 100vh; width: 100vw; background-color: #171C22; scroll-snap-align: start">
+
+        <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent2" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
+            <h1 id="txt5" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: 0px;"></h1>
+            
+            <div id="classContainer" style="width: 80%; height: 60%; margin-top: 100px; background-color: none; display: flex; justify-content: center; align-items: center;">
+                
+                <div id="webDevCard" style="width: 30%; height: 90%; margin-right: 20px; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                    <img src="/Images/WebDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">Web Developer</h1>
+                    <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 17%; ">I’ve made professional websites and online games with HTML, CSS and Javascript. </h1>
+                </div>
+
+                <div id="appDevCard" style="width: 30%; height: 90%; margin-right: 20px; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                    <img src="/Images/AppDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">App Developer</h1>
+                    <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 20%; ">I’ve also made professional modern design Apps using frameworks like React Native Expo and Flutter. </h1>
+                </div>
+
+                <div id="graphicsDevCard" style="width: 30%; height: 90%; margin-right: 20px; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                    <img src="/Images/GraphicsDesignerIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">Graphics Designer</h1>
+                    <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 20%; ">When making Apps and Websites I make a design of it. I’ve used Adobe XD and I’m currently using Figma. </h1>
+                </div>
+
+                
+                
+                
+                
+            
+            </div>
+
+
+        </div>
+
+        <div style="display: flex; height: 100vh;">
+            <div style="display: flex; align-items: center; margin-left: 10px;">
+                
+                <div onmouseover="menuTransform('enter')" class="hoverLine" id="hoverLine2" style="width: 8px; height: 200px; background-color: white; transition: 1s; border-radius: 10px; position: absolute;"></div>
+                </div>
+    
+                <div id="menuContents2" style="display: hidden; align-items: center; justify-content: center; flex-direction: column; height: 98%; width: 00px; opacity: 0; margin-left: 10px; transition: 1s;" >
+                    <div onclick="changePage(1)" onmouseenter="menuItemsHover('enter', 'HomeIcon3')" onmouseleave="menuItemsHover('leave', 'HomeIcon2')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="HomeIcon2" src="/Images/HomeIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Home</h1>
+                    </div>
+                    <div onclick="changePage(2)" onmouseenter="menuItemsHover('enter', 'AboutIcon2')" onmouseleave="menuItemsHover('leave', 'AboutIcon2')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="AboutIcon2" src="/Images/AboutIconSelected.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">About</h1>
+                    </div>
+                    <div onclick="changePage(3)" onmouseenter="menuItemsHover('enter', 'ProjectsIcon2')" onmouseleave="menuItemsHover('leave', 'ProjectsIcon2')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ProjectsIcon2" src="/Images/ProjectsIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Projects</h1>
+                    </div>
+                    <div onclick="changePage(4)" onmouseenter="menuItemsHover('enter', 'ServicesIcon2')" onmouseleave="menuItemsHover('leave', 'ServicesIcon2')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ServicesIcon2" src="/Images/ServicesIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Services</h1>
+                    </div>
+                    <div onclick="changePage(5)" onmouseenter="menuItemsHover('enter', 'ReviewsIcon2')" onmouseleave="menuItemsHover('leave', 'ReviewsIcon2')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ReviewsIcon2" src="/Images/ReviewsIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Reviews</h1>
+                    </div>
+                </div>
+    
+            </div>
+    </div>
+
+    <!-- Projects PAGE -->
+    <div id="Projects" style="height: 100vh; width: 100vw; background-color: #20272F; position: relative; scroll-snap-align: start; transition: 1s; flex-direction: column;">
+        <!-- Projects View Page -->
+        <div id="ProjectsView" style="height: 100vh; width: 100vw; background-color: #20272F; scroll-snap-align: start; transition: 1s;">
+            <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent3" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
+                <h1 id="txt6" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: -50px;"></h1>
+    
+    
+                <div id="projectsContainer" class="projectsContainer" style="margin-top: 50px;" onmouseenter="isOnProjectsScroll = true" onmouseleave="isOnProjectsScroll = false" >
+    
+                    <div id="projects1" onclick="projectsAnim('3' + 1)" class="projectCard" style="position: relative; opacity: 0; right: 100px; opacity: 0; right: 100px;">
+                        <img class="projectImg" src="/Images/BallOverrideIconProjectIcon.png " style="width: 82%; height: 65%; position: relative; top: 0px; left: 20px; margin: 10px; transition: 1s; ">
+                        <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; left: 20px; margin: 15px; transition: 1s;   ">Ball Override</h1>
+                        <div style="width: 100%; height: 50px; position: absolute; background-color: transparent; white-space: pre-wrap;">
+                            <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative; top: -50px; background-color: transparent; left: 20px; margin: 15px; height: 200px; width: 82%; transition: 1s; ">Ball Override is a .io type of game where you can build and customize your own ball and defeat the huge bosses or just do multiplayer with your friends. This game is built for everyone of ages and will contain consistent weekly updates decided by the Ball Override community. This Game also is inspired by games such as Slither.io, Paper.io and most of the io type games and snake its free with a few ads and contains cheep in-app purchases.Contact the developer on twitter @TamGamer97 </h1>
+                        </div>
+    
+                    </div>
+    
+                    <div id="projects2" onclick="projectsAnim('3' + 2)" class="projectCard" style="position: relative; opacity: 0; right: 100px;">
+                        <img class="projectImg" src="/Images/WordleInfiniteProjectIcon.png " style="width: 82%; height: 65%; position: relative; top: 0px; left: 20px; margin: 10px; transition: 1s; ">
+                        <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; left: 20px; margin: 15px; transition: 1s;   ">Wordle Infinite</h1>
+                        <div style="width: 100%; height: 50px; position: absolute; background-color: transparent; white-space: pre-wrap;">
+                            <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative; top: -50px; background-color: transparent; left: 20px; margin: 15px; height: 200px; width: 82%; transition: 1s;">Ball Override is a .io type of game where you can build and customize your own ball and defeat the huge bosses or just do multiplayer with ... </h1>
+                        </div>
+    
+                    </div>
+    
+                    <div id="projects3" onclick="projectsAnim('3' + 3)" class="projectCard" style="position: relative; opacity: 0; right: 100px;">
+                        <img class="projectImg" src="/Images/GuessTheCountryProjectIcon.png " style="width: 82%; height: 65%; position: relative; top: 0px; left: 20px; margin: 10px; transition: 1s; ">
+                        <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; left: 20px; margin: 15px; transition: 1s;   ">Guess The Country</h1>
+                        <div style="width: 100%; height: 50px; position: absolute; background-color: transparent; white-space: pre-wrap;">
+                            <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative; top: -50px; background-color: transparent; left: 20px; margin: 15px; height: 200px; width: 82%; transition: 1s;">I’ve made professional websites and online games with HTML, CSS and Javascript. </h1>
+                        </div>
+    
+                    </div>
+                    <div id="projects4" onclick="projectsAnim('3' + 4)" class="projectCard" style="position: relative; opacity: 0; right: 100px;">
+                        <img class="projectImg" src="/Images/ClrSwitchProjectIcon-1.png " style="width: 82%; height: 65%; position: relative; top: 0px; left: 20px; margin: 10px;transition: 1s;  ">
+                        <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; left: 20px; margin: 15px; transition: 1s;   ">Colour Switch</h1>
+                        <div style="width: 100%; height: 50px; position: absolute; background-color: transparent; white-space: pre-wrap;">
+                            <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative; top: -50px; background-color: transparent; left: 20px; margin: 15px; height: 200px; width: 82%; transition: 1s;">I’ve made professional websites and online games with HTML, CSS and Javascript. </h1>
+                        </div>
+    
+                    </div>
+    
+    
+                    <div id="projects5" onclick="projectsAnim('3' + 5)" class="projectCard" style="position: relative; opacity: 0; right: 100px;">
+                        <img class="projectImg" src="/Images/SalahTimesIconproject.png " style="width: 82%; height: 65%; position: relative; top: 0px; left: 20px; margin: 10px; transition: 1s; ">
+                        <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; left: 20px; margin: 15px; transition: 1s;   ">Salah Times</h1>
+                        <div style="width: 100%; height: 50px; position: absolute; background-color: transparent; white-space: pre-wrap;">
+                            <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative; top: -50px; background-color: transparent; left: 20px; margin: 15px; height: 200px; width: 82%; transition: 1s;">I’ve made professional websites and online games with HTML, CSS and Javascript. </h1>
+                        </div>
+    
+                    </div>
+    
+                    <div id="projects6" onclick="projectsAnim('3' + 6)" class="projectCard" style="position: relative; opacity: 0; right: 100px;">
+                        <img class="projectImg" src="/Images/CalculatorIconproject.png " style="width: 82%; height: 65%; position: relative; top: 0px; left: 20px; margin: 10px; transition: 1s; ">
+                        <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; left: 20px; margin: 15px; transition: 1s;   ">Calculator Build</h1>
+                        <div style="width: 100%; height: 50px; position: absolute; background-color: transparent; white-space: pre-wrap;">
+                            <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative; top: -50px; background-color: transparent; left: 20px; margin: 15px; height: 200px; width: 82%; transition: 1s;">I’ve made professional websites and online games with HTML, CSS and Javascript. </h1>
+                        </div>
+    
+                    </div>
+    
+                    <div id="projects7" onclick="projectsAnim('3' + 7)" class="projectCard" style="position: relative; opacity: 0; right: 100px;">
+                        <img class="projectImg" src="/Images/SuprememeFlashIconProject.png " style="width: 82%; height: 65%; position: relative; top: 0px; left: 20px; margin: 10px; transition: 1s; ">
+                        <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; left: 20px; margin: 15px; transition: 1s;   ">Supreme Flash</h1>
+                        <div style="width: 100%; height: 50px; position: absolute; background-color: transparent; white-space: pre-wrap;">
+                            <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative; top: -50px; background-color: transparent; left: 20px; margin: 15px; height: 200px; width: 82%; transition: 1s;">I’ve made professional websites and online games with HTML, CSS and Javascript. </h1>
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+    
+    
+    
+            </div>
+    
+            <div style="display: flex; height: 100vh;">
+                <div style="display: flex; align-items: center; margin-left: 10px;">
+                    
+                    <div onmouseover="menuTransform('enter')" class="hoverLine" id="hoverLine3" style="width: 8px; height: 200px; background-color: white; transition: 1s; border-radius: 10px; position: absolute;"></div>
+                    </div>
+        
+                    <div id="menuContents3" style="display: hidden; align-items: center; justify-content: center; flex-direction: column; height: 98%; width: 00px; opacity: 0; margin-left: 10px; transition: 1s;" >
+                        <div onclick="changePage(1)" onmouseenter="menuItemsHover('enter', 'HomeIcon3')" onmouseleave="menuItemsHover('leave', 'HomeIcon3')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                            <img id="HomeIcon3" src="/Images/HomeIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                            <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Home</h1>
+                        </div>
+                        <div onclick="changePage(2)" onmouseenter="menuItemsHover('enter', 'AboutIcon3')" onmouseleave="menuItemsHover('leave', 'AboutIcon3')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                            <img id="AboutIcon3" src="/Images/AboutIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                            <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">About</h1>
+                        </div>
+                        <div onclick="changePage(3)" onmouseenter="menuItemsHover('enter', 'ProjectsIcon3')" onmouseleave="menuItemsHover('leave', 'ProjectsIcon3')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                            <img id="ProjectsIcon3" src="/Images/ProjectsIconSelected.png" style="position: relative; margin-right: 10px;" width="20px">
+                            <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Projects</h1>
+                        </div>
+                        <div onclick="changePage(4)" onmouseenter="menuItemsHover('enter', 'ServicesIcon3')" onmouseleave="menuItemsHover('leave', 'ServicesIcon3')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                            <img id="ServicesIcon3" src="/Images/ServicesIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                            <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Services</h1>
+                        </div>
+                        <div onclick="changePage(5)" onmouseenter="menuItemsHover('enter', 'ReviewsIcon3')" onmouseleave="menuItemsHover('leave', 'ReviewsIcon3')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                            <img id="ReviewsIcon3" src="/Images/ReviewsIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                            <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Reviews</h1>
+                        </div>
+                    </div>
+        
+            </div>
+        </div>
+        
+        <!-- Projects Indeph Page -->
+        <div id="ProjectsInDepth" style="height: 100vh; width: 100vw; top: 0px; left: 100vw; background-color: #a6130905; position: absolute; scroll-snap-align: start; transition: 1s;">
+            <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent3" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
+                <h1 id="txt7" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: -50px;">Ball Override</h1>
+                
+                <div id="projects1" style="position: relative; opacity: 1; right: 100px;">
+
+                    <img id="inDepthImg" src="/Images/BallOverrideIconProjectIcon.png " style="width: 32%; height: 65%; position: relative; top: 20px; left: 50px; object-fit: contain;">
+
+                    <h1 id="txt8" style="color: white; font-size: 150%; font-weight: 600; position: absolute; top: 20px; left: 32%; margin: 15px; transition: 1s;   ">Ball Override</h1>
+                    <h1 id="txt9" style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; top: 90px; background-color: transparent; left: 29.25%;  margin: 15px;  height: 200px; width: 52%; transition: 1s; ">Ball Override is a .io type of game where you can build and customize your own ball and defeat the huge bosses or just do multiplayer with your friends. This game is built for everyone of ages and will contain consistent weekly updates decided by the Ball Override community. This Game also is inspired by games such as Slither.io, Paper.io and most of the io type games and snake its free with a few ads and contains cheep in-app purchases.Contact the developer on twitter @TamGamer97 </h1>
+                    
+                </div>
+                
+                <div style="display: flex; justify-content: center; width: 100%; position: absolute; bottom: 20%;">
+                    <div style="position: absolute; width: 100px; height: 50px; background-color: transparent; display: flex; justify-content: center; gap: 90px">
+                        <img id="playStoreImg" src="/Images/PlayStoreIcon.png" style="width: 70px; opacity: 1; cursor: pointer;" title="Play Store" >
+                        <img id="onlineImg" src="/Images/OnlineIcon.png" style="width: 70px; opacity: 1; cursor: pointer;" title="Online">
+                        <img id="desktopImg" src="/Images/desktopIcon.png" style="width: 70px; opacity: 1; cursor: pointer;" title="Desktop">
+                    </div>
+
+                </div>
+
+            </div>
+    
+            <div style="display: flex; height: 100vh;">
+                <div style="display: flex; align-items: center; margin-left: 10px;">
+                    
+                    <div onmouseover="projectsAnim(4)" class="hoverLine" id="hoverLine3" style="width: 8px; height: 200px; background-color: white; transition: 1s; border-radius: 10px; position: absolute;"></div>
+                    </div>
+        
+            </div>
+        </div>
+
+    </div>
+
+    
+    <!-- Services PAGE -->
+    <div id="Services" style="height: 100vh; width: 100vw; background-color: #171C22; scroll-snap-align: start">
+
+        <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent4" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
+            <h1 id="txt5" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: 0px;">Services</h1>
+
+        </div>
+
+        <div style="display: flex; height: 100vh;">
+            <div style="display: flex; align-items: center; margin-left: 10px;">
+                
+                <div onmouseover="menuTransform('enter')" class="hoverLine" id="hoverLine4" style="width: 8px; height: 200px; background-color: white; transition: 1s; border-radius: 10px; position: absolute;"></div>
+                </div>
+    
+                <div id="menuContents4" style="display: hidden; align-items: center; justify-content: center; flex-direction: column; height: 98%; width: 00px; opacity: 0; margin-left: 10px; transition: 1s;" >
+                    <div onclick="changePage(1)" onmouseenter="menuItemsHover('enter', 'HomeIcon4')" onmouseleave="menuItemsHover('leave', 'HomeIcon4')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="HomeIcon4" src="/Images/HomeIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Home</h1>
+                    </div>
+                    <div onclick="changePage(2)" onmouseenter="menuItemsHover('enter', 'AboutIcon4')" onmouseleave="menuItemsHover('leave', 'AboutIcon4')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="AboutIcon4" src="/Images/AboutIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">About</h1>
+                    </div>
+                    <div onclick="changePage(3)" onmouseenter="menuItemsHover('enter', 'ProjectsIcon4')" onmouseleave="menuItemsHover('leave', 'ProjectsIcon4')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ProjectsIcon4" src="/Images/ProjectsIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Projects</h1>
+                    </div>
+                    <div onclick="changePage(4)" onmouseenter="menuItemsHover('enter', 'ServicesIcon4')" onmouseleave="menuItemsHover('leave', 'ServicesIcon4')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ServicesIcon4" src="/Images/ServicesIconSelected.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Services</h1>
+                    </div>
+                    <div onclick="changePage(5)" onmouseenter="menuItemsHover('enter', 'ReviewsIcon4')" onmouseleave="menuItemsHover('leave', 'ReviewsIcon4')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ReviewsIcon4" src="/Images/ReviewsIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Reviews</h1>
+                    </div>
+                </div>
+    
+        </div>
+    
+    </div>
+    
+    <!-- Reviews PAGE -->
+    <div id="Reviews" style="height: 100vh; width: 100vw; background-color: #20272F; scroll-snap-align: start">
+
+        <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent5" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
+            <h1 id="txt5" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: 0px;">Reviews</h1>
+
+        </div>
+
+        <div style="display: flex; height: 100vh;">
+            <div style="display: flex; align-items: center; margin-left: 10px;">
+                
+                <div onmouseover="menuTransform('enter')" class="hoverLine" id="hoverLine5" style="width: 8px; height: 200px; background-color: white; transition: 1s; border-radius: 10px; position: absolute;"></div>
+                </div>
+    
+                <div id="menuContents5" style="display: hidden; align-items: center; justify-content: center; flex-direction: column; height: 98%; width: 00px; opacity: 0; margin-left: 10px; transition: 1s;" >
+                    <div onclick="changePage(1)" onmouseenter="menuItemsHover('enter', 'HomeIcon5')" onmouseleave="menuItemsHover('leave', 'HomeIcon5')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="HomeIcon5" src="/Images/HomeIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Home</h1>
+                    </div>
+                    <div onclick="changePage(2)" onmouseenter="menuItemsHover('enter', 'AboutIcon5')" onmouseleave="menuItemsHover('leave', 'AboutIcon5')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="AboutIcon5" src="/Images/AboutIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">About</h1>
+                    </div>
+                    <div onclick="changePage(3)" onmouseenter="menuItemsHover('enter', 'ProjectsIcon5')" onmouseleave="menuItemsHover('leave', 'ProjectsIcon5')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ProjectsIcon5" src="/Images/ProjectsIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Projects</h1>
+                    </div>
+                    <div onclick="changePage(4)" onmouseenter="menuItemsHover('enter', 'ServicesIcon5')" onmouseleave="menuItemsHover('leave', 'ServicesIcon5')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ServicesIcon5" src="/Images/ServicesIcon.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Services</h1>
+                    </div>
+                    <div onclick="changePage(5)" onmouseenter="menuItemsHover('enter', 'ReviewsIcon5')" onmouseleave="menuItemsHover('leave', 'ReviewsIcon5')" class="menuItem" style="display: flex; align-items: center; margin-right: 10px;">
+                        <img id="ReviewsIcon5" src="/Images/ReviewsIconSelected.png" style="position: relative; margin-right: 10px;" width="20px">
+                        <h1 style="color: white; position: relative; font-weight: 100; font-size: 20px; margin-left: 10px">Reviews</h1>
+                    </div>
+                </div>
+    
+        </div>
+    
+    </div>
+    
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+<script>
+
+    // changePage(1)
+
+
+    VANTA.BIRDS({
+        el: "#overlayTop",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        backgroundColor: '#20272f',
+        color1: 0xd70000,
+        color2: 0xcf4343,
+        colorMode: "lerpGradient",
+        birdSize: 1.10,
+        speedLimit: 6.00,
+        separation: 53.00,
+        alignment: 12.00,
+        quantity: 2.00
+    })
+    
+    function homeAnim(txt)
+    {
+        if(txt == 1)
+        {
+            const txt1 = new TypeIt("#txt1", {
+                strings: "Hi, I'm",
+                speed: 50,
+                waitUntilVisible: true,
+                afterComplete: () => { homeAnim(2), txt1.destroy(true);}
+            }).go();
+        }
+        if(txt == 2)
+        {
+            new TypeIt("#txt2", {
+                strings: '<span style="color: #FF3333;">Tam</span>Dev',
+                speed: 70,
+                waitUntilVisible: true,
+                afterComplete: () => {homeAnim(3)}
+            }).go();
+        }
+        if(txt == 3)
+        {
+            const txt3 = new TypeIt("#txt3", {
+                strings: 'UI/UX WEBSITE DESIGNER AND DEVELOPER',
+                speed: 30,
+                waitUntilVisible: true,
+                afterComplete: () => {homeAnim(4); txt3.destroy(true);}
+            }).go();
+        }
+        if(txt == 4)
+        {
+            const txt4 = new TypeIt("#txt4", {
+                strings: 'I make websites, apps, games and graphic designs like posters, banners and software designs.',
+                speed: 20,
+                waitUntilVisible: true,
+                afterComplete: () => {txt4.destroy(true); homeAnim(5)}
+            }).go();
+        }
+        if(txt == 5) // social media icons
+        {
+            document.getElementById('TwitterIconRed').style.opacity = 0.8
+            document.getElementById('TwitterIconRed').style.transform = 'translateY(-100px)'
+
+            setTimeout(() => {
+                document.getElementById('GithubIconRed').style.opacity = 0.8
+                document.getElementById('GithubIconRed').style.transform = 'translateY(-100px)'
+
+                setTimeout(() => {
+                    document.getElementById('FiverrIconRed').style.opacity = 0.8
+                    document.getElementById('FiverrIconRed').style.transform = 'translateY(-100px)'
+                    
+                }, 500);
+            }, 500);
+        }
+    }
+    homeAnim(1)
+
+    
+    let txt1AboutComplte = false
+    function aboutAnim(txt)
+    {
+        if(txt == 1 && !txt1AboutComplte)
+        {
+            txt1AboutComplte = true
+            const txt5 = new TypeIt("#txt5", {
+                strings: "What i Do",
+                speed: 80,
+                waitUntilVisible: true,
+                afterComplete: () => {txt5.destroy(true); aboutAnim(2)}
+            }).go();
+        }
+        if(txt == 2) // not text but cards
+        {
+            document.getElementById('webDevCard').style.opacity = 1
+            setTimeout(() => {
+                document.getElementById('appDevCard').style.opacity = 1
+                setTimeout(() => {
+                    document.getElementById('graphicsDevCard').style.opacity = 1
+                    
+                }, 1000);
+            }, 1000);
+            
+        }
+    }
+
+    let txt2AboutComplte = false
+
+    const amountOfProjects = document.getElementById('projectsContainer').childElementCount
+
+    function projectsAnim(txt)
+    {
+        if(txt == 1 && !txt2AboutComplte)
+        {
+            txt2AboutComplte = true
+            const txt5 = new TypeIt("#txt6", {
+                strings: "Projects",
+                speed: 80,
+                waitUntilVisible: true,
+                afterComplete: () => {txt5.destroy(true); projectsAnim(2)}
+            }).go();
+        }
+
+        if(txt == 2)
+        {
+            
+            function loopProjects(n)
+            {
+                setTimeout(() => {
+                    document.getElementById('projects' + n).style.opacity = 1
+                    document.getElementById('projects' + n).style.right = 0 +'px'
+                    if(n != amountOfProjects)
+                    {
+                        loopProjects(n+1)
+                    }
+                }, 500);
+            }
+            loopProjects(1)
+        }
+
+        if(txt[0] == '3') // indepthView
+        {
+            var projectIndex = txt.substring(1)
+
+            var children = document.getElementById('projectsContainer').children;
+            var elem = children[projectIndex -1]
+
+            document.getElementById('txt7').innerHTML = elem.children[1].innerHTML
+
+            document.getElementById('txt8').innerHTML = elem.children[1].innerHTML
+
+            document.getElementById('txt9').innerHTML = elem.children[2].innerHTML
+
+            document.getElementById('inDepthImg').src = elem.children[0].src
+
+            document.getElementById('playStoreImg').onclick = () => {location.href = '_blankhttps://play.google.com/store/apps/details?id=com.TamGamer.BallOverride&hl=en_GB&gl=US'}
+
+            document.getElementById('ProjectsView').style.transform = 'translateX(-100vw)'
+            document.getElementById('ProjectsInDepth').style.transform = 'translateX(-100vw)'
+
+        }
+
+        if(txt == 4) // indepthView Leave
+        {
+            document.getElementById('ProjectsView').style.transform = 'translateX(0vw)'
+            document.getElementById('ProjectsInDepth').style.transform = 'translateX(0vw)'
+
+
+        }
+    }
+
+
+    var pageNum = 1
+
+    function changePage(newPage)
+    {
+        pageNum = newPage
+        const pageInd = ['Home', 'About', 'Projects', 'Services', 'Reviews']
+        
+        currentPage = pageInd[newPage - 1] 
+
+        document.getElementById('title').innerHTML = pageInd[pageNum - 1] + ' - TamDev'
+
+        document.getElementById(pageInd[pageNum - 1]).scrollIntoView({behavior: 'smooth'})
+
+        if(newPage == 2)
+        {
+            console.log('e')
+            aboutAnim(1)
+        }
+
+        if(newPage == 3)
+        {
+            projectsAnim(1)
+        }
+    }
+
+    var seenMenu = false
+    var onMenu = false
+    function menuTransform(act)
+    {
+        if(act == 'enter')
+        {
+            document.getElementById('mainContent' + pageNum).style.marginRight = '-300px'
+
+            document.getElementById('hoverLine' + pageNum).style.width = '300px'
+            document.getElementById('hoverLine' + pageNum).style.height = '98%'
+            document.getElementById('hoverLine' + pageNum).style.backgroundColor = '#2A2A2A'
+
+            document.getElementById('menuContents' + pageNum).style = 'display: flex; align-items: center; justify-content: center; flex-direction: column; height: 98%; width: 300px; opacity: 1; margin-left: 10px; transition: 1s;'
+
+            seenMenu = true
+            onMenu = true
+
+        }else{
+            document.getElementById('mainContent' + pageNum).style.marginRight = '0px'
+
+            document.getElementById('hoverLine' + pageNum).style.width = '8px'
+            document.getElementById('hoverLine' + pageNum).style.height = '200px'
+            document.getElementById('hoverLine' + pageNum).style.backgroundColor = 'white'
+
+            document.getElementById('menuContents' + pageNum).style.opacity = 0
+            document.getElementById('menuContents' + pageNum).style = 'display: hidden; align-items: center; justify-content: center; flex-direction: column; height: 98%; width: 00px; opacity: 0; margin-left: 10px;'
+
+            onMenu = false
+        }
+    }
+
+    var timegap = 3000
+    function alertOfMenu()
+    {
+        if(seenMenu)
+        {
+           timegap = 10000 
+        }
+        setTimeout(() => {
+            if(!onMenu)
+            {
+
+                document.getElementById('hoverLine' + pageNum).style.transform = 'translateX(20px)'
+                document.getElementById('hoverLine' + pageNum).style.backgroundColor = '#FF3333'
+                timegap = 2000    
+            }
+            setTimeout(() => {
+                document.getElementById('hoverLine' + pageNum).style.transform = 'translateX(0px)'
+                document.getElementById('hoverLine' + pageNum).style.backgroundColor = 'white'
+                alertOfMenu()
+
+                if(onMenu == true)
+                {
+                    document.getElementById('hoverLine' + pageNum).style.backgroundColor = '#2A2A2A'
+                }
+            }, 600)
+                
+        }, timegap);
+    }
+
+    alertOfMenu()
+    // menuTransform('enter') // keep off
+
+    var changedIcon = false
+    var currentPage = 'Home'
+    function menuItemsHover(act, name)
+    {
+        
+        if(name.slice(0, -1) != currentPage + 'Icon')
+        {
+            if(act == 'enter')
+            {
+                if(changedIcon == false)
+                {
+                    document.getElementById(name).src = '/Images/' + name.slice(0, -1) + 'Selected.png'
+                    document.getElementById(name).style.opacity = 0.7
+                    changedIcon = true
+                }
+    
+            }else{
+                document.getElementById(name).src = '/Images/' + name.slice(0, -1) + '.png'
+                document.getElementById(name).style.opacity = 1
+                changedIcon = false
+            }
+        }
+    }
+
+    currentScrollOffset = 0
+
+    let isOnProjectsScroll = false
+    let currentItem = 1
+
+    document.getElementById("projectsContainer").addEventListener("wheel", (e) => {
+        console.log(currentItem)
+
+        if(e.deltaY == 100) // down
+        {
+            if(currentItem !=1)
+            {
+                var c = document.getElementById('projects' + (currentItem - 1)).offsetLeft
+                document.getElementById("projectsContainer").scrollTo({top: 0, left: c, behavior: 'smooth'})
+    
+                currentItem -= 1
+            }
+        }
+        if(e.deltaY == -100) // up
+        {
+            if(currentItem < amountOfProjects -3)
+            {
+                console.log('scrolled')
+                var c = document.getElementById('projects' + (currentItem + 1)).offsetLeft
+                document.getElementById("projectsContainer").scrollTo({top: 0, left: c, behavior: 'smooth'})
+    
+                currentItem += 1
+            }
+        }
+
+    });
+
+    const slider = document.querySelector('.projectsContainer');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    slider.addEventListener('mousedown', (e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e.pageX - slider.offsetLeft;
+    scrollLeft = slider.scrollLeft;
+    });
+    slider.addEventListener('mouseleave', () => {
+    isDown = false;
+    slider.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', () => {
+    isDown = false;
+    slider.classList.remove('active');
+    });
+    slider.addEventListener('mousemove', (e) => {
+    if(!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 1; //scroll-fast
+    slider.scrollLeft = scrollLeft - walk;
+    console.log(slider.scrollLeft)
+    });
+
+
+
+    document.getElementById("Home").addEventListener("wheel", (e) => {
+        // console.log(e.deltaY)
+
+        if(e.deltaY == 100 && !isOnProjectsScroll)
+        {
+            changePage(2)
+        }
+
+    });
+
+    document.getElementById("About").addEventListener("wheel", (e) => {
+        // console.log(e.deltaY)
+
+        if(e.deltaY == -100 && !isOnProjectsScroll)
+        {
+            changePage(1)
+        }
+
+        if(e.deltaY == 100 && !isOnProjectsScroll)
+        {
+            changePage(3)
+        }
+
+    });
+    
+    document.getElementById("Projects").addEventListener("wheel", (e) => {
+        // console.log(e.deltaY)
+
+        if(e.deltaY == -100 && !isOnProjectsScroll)
+        {
+            changePage(2)
+            document.getElementById('ProjectsInDepth').style.transition = '0.1s'
+            document.getElementById('ProjectsView').style.transition = '0.1s'
+            projectsAnim(4)
+            document.getElementById('ProjectsInDepth').style.transition = '1s'
+            document.getElementById('ProjectsView').style.transition = '1s'
+        }
+
+        if(e.deltaY == 100 && !isOnProjectsScroll)
+        {
+            changePage(4)
+            document.getElementById('ProjectsInDepth').style.transition = '0.1s'
+            document.getElementById('ProjectsView').style.transition = '0.1s'
+            projectsAnim(4)
+            document.getElementById('ProjectsInDepth').style.transition = '1s'
+            document.getElementById('ProjectsView').style.transition = '1s'
+        }
+
+    });
+
+    document.getElementById("Services").addEventListener("wheel", (e) => {
+        // console.log(e.deltaY)
+
+        if(e.deltaY == -100 && !isOnProjectsScroll)
+        {
+            changePage(3)
+        }
+
+        if(e.deltaY == 100 && !isOnProjectsScroll)
+        {
+            changePage(5)
+        }
+
+    });
+
+    document.getElementById("Reviews").addEventListener("wheel", (e) => {
+        // console.log(e.deltaY)
+
+        if(e.deltaY == -100 && !isOnProjectsScroll)
+        {
+            changePage(4)
+        }
+
+    });
+
+
+    
+
+</script>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400&display=swap');
+    body{
+        background-color: #20272F;
+        font-family: 'Readex Pro', sans-serif;
+        margin: 0px;
+        scroll-behavior: smooth;
+
+        overflow: hidden;
+    }
+    .page{
+        scroll-snap-align: start;
+    }
+    .mainContent{
+        transition: 1s;
+    }
+    .menuItem{
+        cursor: pointer;
+    }
+    .menuContents{
+        transition: 1s;
+    }
+    .aboutCards:hover{
+        -webkit-box-shadow: 0px 6px 70px 0px rgba(0,0,0,0.92);
+        -moz-box-shadow: 0px 6px 70px 0px rgba(0,0,0,0.92);
+        box-shadow: 0px 6px 70px 0px rgba(0,0,0,0.92);
+
+        background-color: #171C22;
+    }
+
+    .projectsContainer{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+
+        transition: 1s;
+    }
+    .projectCard{
+        width: 22vw;
+        height: 56vh;
+        background-color: rgba(145, 145, 145, 0);
+        display: inline-block;
+
+        margin-left: -15px;
+        margin-right: -15px;
+
+        transition: 1s;
+    }
+
+        /* scroll bar */ 
+        *::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            border-radius: 20px;
+            /* border: 3px solid rgb(255, 38, 0); */
+        }
+
+
+    .projectCard:hover{
+        cursor: pointer;
+    }
+    .projectImg:hover{
+        -webkit-box-shadow: 0px 6px 30px 1px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 30px 1px rgba(0,0,0,0.82); box-shadow: 0px 6px 30px 1px rgba(0,0,0,0.82);
+
+        background-color: #171C22;
+
+        cursor: pointer;
+    }
+
+</style>
