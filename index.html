@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="title"  >Home - TamDev</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <!-- AU DARK IS OLD THEME -->
 </head>
 <body id="body">
 
@@ -69,7 +70,7 @@
             
             <div id="classContainer" style="width: 80%; height: 60%; margin-top: 100px; background-color: none; display: flex; justify-content: center; align-items: center;">
                 
-                <div id="webDevCard" style="width: 30%; height: 90%; margin-right: 20px; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                <div id="webDevCard" style="width: 30%; height: 90%; margin-right: 20px; right: 10px; margin-left: 10px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
                     <img src="/Images/WebDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
                     <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">Web Developer</h1>
                     <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 17%; ">I’ve made professional websites and online games with HTML, CSS and Javascript. </h1>
@@ -276,19 +277,55 @@
 
     </div>
 
-    
     <!-- Services PAGE -->
     <div id="Services" style="height: 100vh; width: 100vw; background-color: #171C22; scroll-snap-align: start">
 
-        <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent4" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
-            <h1 id="txt5" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: 0px;">Services</h1>
+        <div  onmouseenter="menuTransform('leave'); document.getElementById('classContainer4').style.width ='100%'" class="mainContent" id="mainContent4" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
+            <div style="position: relative; display: flex; justify-content: center;">
+                <h1 id="txt10" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: -90px;"></h1>
+            </div>
+
+            <div id="classContainer4" style="width: 100%; height: 70%; margin-top: 100px; background-color: none; display: flex; transition: 1s; justify-content: center; align-items: center;">
+                
+                <div id="webappmaintainCard" onmouseenter="this.style.width = '28%'; this.style.height = '100%' " onmouseleave="this.style.width = '25%'; this.style.height = '90%'   " style="width: 25%; height: 90%; cursor: pointer; margin-right: 20px; position: relative; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; transition: 1s; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                    <img src="/Images/WebDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 44%; height: 8%; overflow: hidden; ">Web/App Maintenance</h1>
+                    <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 58%; width: 92%; max-height: 40%; background-color: transparent; overflow: hidden; ">Streamline your website maintenance with this Monthly Subscription service. I will handle all the updates, ensuring your website remains secure, up-to-date, and visually appealing. You can message me 24/7 with any website updates/fixes. Say goodbye to the hassle of managing your website and focus on what matters most – your business. </h1>
+                    
+                    <div class="moreInfoBtn" style="width: 50%; height: 9%; background-color: #FF5353; border-radius: 10px; position: absolute; bottom: 20px; display: flex; justify-content: center; align-items: center; ">
+                        <h1 style="color: white; font-size: 100%; font-weight: 600; text-align: center; ">More Info</h1>
+                    </div>
+
+                </div>
+
+                <div id="webappdevCard" onmouseenter="this.style.width = '28%'; this.style.height = '100%' " onmouseleave="this.style.width = '25%'; this.style.height = '90%'   " style="width: 25%; height: 90%; cursor: pointer; margin-right: 20px; position: relative; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; transition: 1s; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                    <img src="/Images/AppDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 44%; height: 8%; overflow: hidden; ">Web/App Development</h1>
+                    <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 58%; width: 92%; max-height: 40%; background-color: transparent; overflow: hidden; ">Supercharge your business with our affordable one-time payment web/app development service. I will create a stunning, customized responsive website or app that perfectly aligns with your brand or objectives. Get ready to impress your audience with a seamless user experience and a visually appealing design.</h1>
+                    
+                    <div class="moreInfoBtn" style="width: 50%; height: 9%; background-color: #FF5353; border-radius: 10px; position: absolute; bottom: 20px; display: flex; justify-content: center; align-items: center; ">
+                        <h1 style="color: white; font-size: 100%; font-weight: 600; text-align: center; ">More Info</h1>
+                    </div>   
+                </div>
+
+                <div id="graphicsdesignCard" onmouseenter="this.style.width = '28%'; this.style.height = '100%' " onmouseleave="this.style.width = '25%'; this.style.height = '90%'   " style="width: 25%; height: 90%; cursor: pointer; margin-right: 20px; position: relative; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; transition: 1s; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                    <img src="/Images/GraphicsDesignerIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 44%; height: 8%; overflow: hidden; ">Graphics Design</h1>
+                    <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 58%; width: 92%; max-height: 40%; background-color: transparent; overflow: hidden; ">Unlock the power of captivating visuals with our exceptional graphic design service. Whether you need stunning website and app designs, eye-catching posters, or impactful banners, our team of designers will bring your ideas to life. We combine creativity and expertise to deliver visually stunning designs that leave a lasting impression. Elevate your brand's aesthetics and stand out from the competition</h1>
+                    
+                    <div class="moreInfoBtn" style="width: 50%; height: 9%; background-color: #FF5353; border-radius: 10px; position: absolute; bottom: 20px; display: flex; justify-content: center; align-items: center; ">
+                        <h1 style="color: white; font-size: 100%; font-weight: 600; text-align: center; ">More Info</h1>
+                    </div>
+                </div>
+
+            </div>
 
         </div>
 
         <div style="display: flex; height: 100vh;">
             <div style="display: flex; align-items: center; margin-left: 10px;">
                 
-                <div onmouseover="menuTransform('enter')" class="hoverLine" id="hoverLine4" style="width: 8px; height: 200px; background-color: white; transition: 1s; border-radius: 10px; position: absolute;"></div>
+                <div onmouseover="menuTransform('enter'); document.getElementById('classContainer4').style.width ='85%'  " class="hoverLine" id="hoverLine4" style="width: 8px; height: 200px; background-color: white; transition: 1s; border-radius: 10px; position: absolute;"></div>
                 </div>
     
                 <div id="menuContents4" style="display: hidden; align-items: center; justify-content: center; flex-direction: column; height: 98%; width: 00px; opacity: 0; margin-left: 10px; transition: 1s;" >
@@ -322,7 +359,121 @@
     <div id="Reviews" style="height: 100vh; width: 100vw; background-color: #20272F; scroll-snap-align: start">
 
         <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent5" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
-            <h1 id="txt5" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: 0px;">Reviews</h1>
+            <h1 id="txt11" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: 0px;"></h1>
+
+            <div id="reviewsContainer" style="margin-top: 200px; background-color: rgba(255, 0, 0, 0); height: 69%; padding-left: 20px;" class="projectsContainer" onmouseenter="isOnReviewsScroll = true" onmouseleave="isOnReviewsScroll = false" >
+                
+                <div style="position: relative; opacity: 1; background-color: #20272F; margin-top: 25px; margin-right: 15px; margin-left: 15px;">
+                    
+                </div>
+
+                <div id="reviewCard1" onclick="window.open('https://www.fiverr.com/tamgamer97', '_blank'); callAlert('Alert', 'Viewing the review from fiverr')" class="reviewsCard" style="position: relative; opacity: 1; background-color: #20272F; margin-top: 25px; margin-right: 15px; margin-left: 15px; margin-top: 190px; opacity: 0; ">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; transition: 1s; text-align: center;">iffy_uk</h1>
+                    <div style="position: relative; width: 100%; height: 50px; background-color: none; display: flex; justify-content: center;gap: 5px;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative;  background-color: transparent; height: 100%; width: 90%; transition: 1s;  white-space: pre-wrap; overflow: hidden; background-color: none; text-align: center; ">'This guy has met all that i wanted, with day/night support throughout the project. Very efficient and pleasant to work with,,with alot of patience he continued to work on my project until completion. Buy his package without any hesitations. Highly recommended, will defiantly use his services again. Many thanks Tamim stay blessed!!!!!'</h1>
+                    </div>
+                    
+                </div>
+
+                <div id="reviewCard2" onclick="window.open('https://www.fiverr.com/tamgamer97', '_blank'); callAlert('Alert', 'Viewing the review from fiverr')" class="reviewsCard" style="position: relative; opacity: 1; background-color: #20272F; margin-top: 15px; margin-right: 15px; margin-left: 15px; margin-top: 190px; opacity: 0; ">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; transition: 1s; text-align: center;">tanvirrokyrt</h1>
+                    <div style="position: relative; width: 100%; height: 50px; background-color: none; display: flex; justify-content: center;gap: 5px;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative;  background-color: transparent; height: 100%; width: 90%; transition: 1s;  white-space: pre-wrap; overflow: hidden; background-color: none; text-align: center; ">'Got exactly what I needed. He is an expert on his work. Will recommend to others.'</h1>
+                    </div>
+                    
+                </div>
+
+                <div id="reviewCard3" onclick="window.open('https://www.fiverr.com/tamgamer97', '_blank'); callAlert('Alert', 'Viewing the review from fiverr')" class="reviewsCard" style="position: relative; opacity: 1; background-color: #20272F; margin-top: 15px; margin-right: 15px; margin-left: 15px; margin-top: 190px; opacity: 0; ">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; transition: 1s; text-align: center;">emailcherelle</h1>
+                    <div style="position: relative; width: 100%; height: 50px; background-color: none; display: flex; justify-content: center;gap: 5px;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative;  background-color: transparent; height: 100%; width: 90%; transition: 1s;  white-space: pre-wrap; overflow: hidden; background-color: none; text-align: center; ">'This seller worked quickly on the order and really paid attention to detail. Was always available for questions and gave me a great end product.'</h1>
+                    </div>
+                    
+                </div>
+
+                <div id="reviewCard4" onclick="window.open('https://www.fiverr.com/tamgamer97', '_blank'); callAlert('Alert', 'Viewing the review from fiverr')" class="reviewsCard" style="position: relative; opacity: 1; background-color: #20272F; margin-top: 15px; margin-right: 15px; margin-left: 15px; margin-top: 190px; opacity: 0; ">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; transition: 1s; text-align: center;">sara7000</h1>
+                    <div style="position: relative; width: 100%; height: 50px; background-color: none; display: flex; justify-content: center;gap: 5px;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative;  background-color: transparent; height: 100%; width: 90%; transition: 1s;  white-space: pre-wrap; overflow: hidden; background-color: none; text-align: center; ">'Excellent work! Excellent communication! Will definitely continue working together.'</h1>
+                    </div>
+                    
+                </div>
+
+                <div id="reviewCard5" onclick="window.open('https://www.fiverr.com/tamgamer97', '_blank'); callAlert('Alert', 'Viewing the review from fiverr')" class="reviewsCard" style="position: relative; opacity: 1; background-color: #20272F; margin-top: 15px; margin-right: 15px; margin-left: 15px; margin-top: 190px; opacity: 0; ">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; transition: 1s; text-align: center;">okayisme </h1>
+                    <div style="position: relative; width: 100%; height: 50px; background-color: none; display: flex; justify-content: center;gap: 5px;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative;  background-color: transparent; height: 100%; width: 90%; transition: 1s;  white-space: pre-wrap; overflow: hidden; background-color: none; text-align: center; ">'Great work with fast communication times. Highly reccomend for quick turnarounds' </h1>
+                    </div>
+                    
+                </div>
+
+                <div id="reviewCard6" onclick="window.open('https://www.fiverr.com/tamgamer97', '_blank'); callAlert('Alert', 'Viewing the review from fiverr')" class="reviewsCard" style="position: relative; opacity: 1; background-color: #20272F; margin-top: 15px; margin-right: 15px; margin-left: 15px; margin-top: 190px; opacity: 0; ">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; transition: 1s; text-align: center;">musicandessays</h1>
+                    <div style="position: relative; width: 100%; height: 50px; background-color: none; display: flex; justify-content: center;gap: 5px;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative;  background-color: transparent; height: 100%; width: 90%; transition: 1s;  white-space: pre-wrap; overflow: hidden; background-color: none; text-align: center; ">'Very patient, talented, and a diligent worker!'</h1>
+                    </div>
+                    
+                </div>
+
+                <div id="reviewCard7" onclick="window.open('https://www.fiverr.com/tamgamer97', '_blank'); callAlert('Alert', 'Viewing the review from fiverr')" class="reviewsCard" style="position: relative; opacity: 1; background-color: #20272F; margin-top: 15px; margin-right: 15px; margin-left: 15px; margin-top: 190px; opacity: 0; ">
+                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: relative; top: 0px; transition: 1s; text-align: center;">jasonm78750</h1>
+                    <div style="position: relative; width: 100%; height: 50px; background-color: none; display: flex; justify-content: center;gap: 5px;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                        <img src="/Images/ReviewsIconSelected.png" style="width: 20px; height: 20px; object-fit: contain;">
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                        <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: relative;  background-color: transparent; height: 100%; width: 90%; transition: 1s;  white-space: pre-wrap; overflow: hidden; background-color: none; text-align: center; ">'Very responsive and returned the results quickly, the design looks good and was what I was looking for.'</h1>
+                    </div>
+                    
+                </div>
+
+
+            </div>
 
         </div>
 
@@ -376,8 +527,6 @@
 
 <script>
 
-    changePage(1)
-
 
     VANTA.BIRDS({
         el: "#overlayTop",
@@ -398,6 +547,66 @@
         alignment: 12.00,
         quantity: 2.00
     })
+
+    let txt5AboutComplte = false
+    function reviewsAnim(txt)
+    {
+        if(txt == 1 && !txt5AboutComplte)
+        {
+            txt5AboutComplte = true
+            const txt11 = new TypeIt("#txt11", {
+                strings: "Reviews",
+                speed: 80,
+                waitUntilVisible: true,
+                afterComplete: () => {txt11.destroy(true); reviewsAnim(2)}
+            }).go();
+        }
+
+        if(txt == 2)
+        {
+            function loopProjects(n)
+            {
+                setTimeout(() => {
+                    document.getElementById('reviewCard' + n).style.opacity = 1
+                    document.getElementById('reviewCard' + n).style.transform = 'translateY(-190px)'
+                    if(n != amountOfReviews - 1)
+                    {
+                        loopProjects(n+1)
+                    }else{ // when complete
+                        addReviewsEventListnerWheell()
+                    }
+                }, 500);
+            }
+            loopProjects(1)
+        }
+    }
+
+    let txt4AboutComplte = false
+    function servicesAnim(txt)
+    {
+        if(txt == 1 && !txt4AboutComplte)
+        {
+            txt4AboutComplte = true
+            const txt10 = new TypeIt("#txt10", {
+                strings: "Services",
+                speed: 80,
+                waitUntilVisible: true,
+                afterComplete: () => {txt10.destroy(true); servicesAnim(2)}
+            }).go();
+        }
+        if(txt == 2)
+        {
+            
+            document.getElementById('webappmaintainCard').style.opacity = 1
+            setTimeout(() => {
+                document.getElementById('webappdevCard').style.opacity = 1
+                setTimeout(() => {
+                    document.getElementById('graphicsdesignCard').style.opacity = 1
+                    
+                }, 1000);
+            }, 1000);
+        }
+    }
 
     function callAlert(title, subtitle)
     {
@@ -500,6 +709,7 @@
     let txt2AboutComplte = false
 
     const amountOfProjects = document.getElementById('projectsContainer').childElementCount
+    const amountOfReviews = document.getElementById('reviewsContainer').childElementCount
 
     function projectsAnim(txt)
     {
@@ -613,6 +823,16 @@
         {
             projectsAnim(1)
         }
+
+        if(newPage == 4)
+        {
+            servicesAnim(1)
+        }
+
+        if(newPage == 5)
+        {
+            reviewsAnim(1)
+        }
     }
 
     var seenMenu = false
@@ -704,6 +924,40 @@
 
     currentScrollOffset = 0
 
+    let isOnReviewsScroll = false
+    let currentItemReviews = 1
+
+    function addReviewsEventListnerWheell()
+    {
+        document.getElementById("reviewsContainer").addEventListener("wheel", (e) => {
+            console.log(currentItemReviews)
+    
+            if(e.deltaY == 100) // down
+            {
+                if(currentItemReviews !=1)
+                {
+                    var c = document.getElementById('reviewCard' + (currentItemReviews - 1)).offsetLeft - 20
+                    document.getElementById("reviewsContainer").scrollTo({top: 0, left: c, behavior: 'smooth'})
+        
+                    currentItemReviews -= 1
+                }
+            }
+            if(e.deltaY == -100) // up
+            {
+                if(currentItemReviews < amountOfReviews -3)
+                {
+                    console.log('scrolled')
+                    var c = document.getElementById('reviewCard' + (currentItemReviews + 1)).offsetLeft - 20
+                    document.getElementById("reviewsContainer").scrollTo({top: 0, left: c, behavior: 'smooth'})
+        
+                    currentItemReviews += 1
+                }
+            }
+    
+        });
+    }
+
+
     let isOnProjectsScroll = false
     let currentItem = 1
 
@@ -737,40 +991,47 @@
         });
     }
 
-    const slider = document.querySelector('.projectsContainer');
-    let isDown = false;
-    let startX;
-    let scrollLeft;
 
-    slider.addEventListener('mousedown', (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-    });
-    slider.addEventListener('mouseleave', () => {
-    isDown = false;
-    slider.classList.remove('active');
-    });
-    slider.addEventListener('mouseup', () => {
-    isDown = false;
-    slider.classList.remove('active');
-    });
-    slider.addEventListener('mousemove', (e) => {
-    if(!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1; //scroll-fast
-    slider.scrollLeft = scrollLeft - walk;
-    console.log(slider.scrollLeft)
-    });
+    function dragableSlider(id)
+    {
+        const slider = document.querySelector('.' + id);
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+        slider.addEventListener('mousedown', (e) => {
+        isDown = true;
+        slider.classList.add('active');
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+        });
+        slider.addEventListener('mouseleave', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        });
+        slider.addEventListener('mouseup', () => {
+        isDown = false;
+        slider.classList.remove('active');
+        });
+        slider.addEventListener('mousemove', (e) => {
+        if(!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        const walk = (x - startX) * 1; //scroll-fast
+        slider.scrollLeft = scrollLeft - walk;
+        console.log(slider.scrollLeft)
+        });
+    }
+
+    dragableSlider('projectsContainer')
+    // dragableSlider('reviewsContainer')
 
 
 
     document.getElementById("Home").addEventListener("wheel", (e) => {
         // console.log(e.deltaY)
 
-        if(e.deltaY == 100 && !isOnProjectsScroll)
+        if(e.deltaY == 100 && !isOnProjectsScroll && !isOnReviewsScroll)
         {
             changePage(2)
         }
@@ -780,12 +1041,12 @@
     document.getElementById("About").addEventListener("wheel", (e) => {
         // console.log(e.deltaY)
 
-        if(e.deltaY == -100 && !isOnProjectsScroll)
+        if(e.deltaY == -100 && !isOnProjectsScroll  && !isOnReviewsScroll)
         {
             changePage(1)
         }
 
-        if(e.deltaY == 100 && !isOnProjectsScroll)
+        if(e.deltaY == 100 && !isOnProjectsScroll  && !isOnReviewsScroll)
         {
             changePage(3)
         }
@@ -795,7 +1056,7 @@
     document.getElementById("Projects").addEventListener("wheel", (e) => {
         // console.log(e.deltaY)
 
-        if(e.deltaY == -100 && !isOnProjectsScroll)
+        if(e.deltaY == -100 && !isOnProjectsScroll  && !isOnReviewsScroll)
         {
             changePage(2)
             document.getElementById('ProjectsInDepth').style.transition = '0.1s'
@@ -805,7 +1066,7 @@
             document.getElementById('ProjectsView').style.transition = '1s'
         }
 
-        if(e.deltaY == 100 && !isOnProjectsScroll)
+        if(e.deltaY == 100 && !isOnProjectsScroll  && !isOnReviewsScroll)
         {
             changePage(4)
             document.getElementById('ProjectsInDepth').style.transition = '0.1s'
@@ -820,12 +1081,12 @@
     document.getElementById("Services").addEventListener("wheel", (e) => {
         // console.log(e.deltaY)
 
-        if(e.deltaY == -100 && !isOnProjectsScroll)
+        if(e.deltaY == -100 && !isOnProjectsScroll  && !isOnReviewsScroll)
         {
             changePage(3)
         }
 
-        if(e.deltaY == 100 && !isOnProjectsScroll)
+        if(e.deltaY == 100 && !isOnProjectsScroll && !isOnReviewsScroll)
         {
             changePage(5)
         }
@@ -835,7 +1096,7 @@
     document.getElementById("Reviews").addEventListener("wheel", (e) => {
         // console.log(e.deltaY)
 
-        if(e.deltaY == -100 && !isOnProjectsScroll)
+        if(e.deltaY == -100 && !isOnProjectsScroll  && !isOnReviewsScroll)
         {
             changePage(4)
         }
@@ -843,7 +1104,9 @@
     });
 
 
-    
+    window.onload = () => {
+        changePage(1)
+    }
 
 </script>
 </html>
@@ -896,6 +1159,7 @@
 
         transition: 1s;
     }
+    
 
         /* scroll bar */ 
         *::-webkit-scrollbar {
@@ -922,6 +1186,27 @@
         background-color: #171C22;
 
         cursor: pointer;
+    }
+    .moreInfoBtn{
+        transition: 1s;
+        opacity: 0.8;
+    }
+    .moreInfoBtn:hover{
+        opacity: 1.5;
+    }
+
+    .reviewsCard{
+        width: 22vw;
+        height: 56vh;
+        background-color: rgba(145, 145, 145, 0);
+        display: inline-block;
+
+
+        transition: 1s;
+
+        -webkit-box-shadow: 0px 3px 30px 1px rgba(0,0,0,0.82); -moz-box-shadow: 0px 3px 30px 1px rgba(0,0,0,0.82); box-shadow: 0px 3px 30px 1px rgba(0,0,0,0.82);
+
+        background-color: #171C22;
     }
 
 </style>
