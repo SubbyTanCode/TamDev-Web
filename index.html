@@ -7,6 +7,7 @@
 
     <title id="title"  >Home - TamDev</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <!-- AU DARK IS OLD THEME -->
 </head>
 <body id="body">
@@ -75,32 +76,33 @@
 
         <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent2" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
             <h1 id="txt5" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: 0px;"></h1>
-            
+
+            <div id="classContWrapper" style="display: flex; justify-content: center; width: 100vw; "> <!-- Gets moved on movile display -->
+
+            </div>
+
             <div id="classContainer" style="width: 80%; height: 60%; margin-top: 100px; background-color: none; display: flex; justify-content: center; align-items: center;">
-                
+                <div id="mobileDivAboutPage" style="display: flex; align-items: center; flex-direction: column;"> <!-- Gets moved on movile display -->
+
+                </div>
                 <div id="webDevCard" style="width: 30%; height: 90%; margin-right: 20px; right: 10px; margin-left: 10px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
-                    <img src="/Images/WebDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
-                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">Web Developer</h1>
-                    <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 17%; ">I’ve made professional websites and online games with HTML, CSS and Javascript. </h1>
+                    <img id="webDevCardImg" src="/Images/WebDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
+                    <h1 id="webDevCardTitle" style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">Web Developer</h1>
+                    <h1 id="webDevCardDesc" style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 17%; ">I’ve made professional websites and online games with HTML, CSS and Javascript. </h1>
                 </div>
 
                 <div id="appDevCard" style="width: 30%; height: 90%; margin-right: 20px; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
-                    <img src="/Images/AppDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
-                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">App Developer</h1>
-                    <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 20%; ">I’ve also made professional modern design Apps using frameworks like React Native Expo and Flutter. </h1>
+                    <img id="appDevCardImg" src="/Images/AppDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
+                    <h1 id="appDevCardTitle" style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">App Developer</h1>
+                    <h1 id="appDevCardDesc" style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 20%; ">I’ve also made professional modern design Apps using frameworks like React Native Expo and Flutter. </h1>
                 </div>
 
                 <div id="graphicsDevCard" style="width: 30%; height: 90%; margin-right: 20px; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
-                    <img src="/Images/GraphicsDesignerIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
-                    <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">Graphics Designer</h1>
-                    <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 20%; ">When making Apps and Websites I make a design of it. I’ve used Adobe XD and I’m currently using Figma. </h1>
+                    <img id="graphicsDevCardImg" src="/Images/GraphicsDesignerIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
+                    <h1 id="graphicsDevCardTitle" style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 12%; ">Graphics Designer</h1>
+                    <h1 id="graphicsDevCardDesc" style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 17%; width: 20%; ">When making Apps and Websites I make a design of it. I’ve used Adobe XD and I’m currently using Figma. </h1>
                 </div>
 
-                
-                
-                
-                
-            
             </div>
 
 
@@ -554,7 +556,7 @@
         speedLimit: 6.00,
         separation: 53.00,
         alignment: 12.00,
-        quantity: 2.00
+        quantity: 2.00 // 2
     })
 
     let isMobileMode = false 
@@ -1031,7 +1033,6 @@
         document.getElementById('txt3').style.display = 'flex'
         document.getElementById('txt3').style.justifyContent = 'center'
         document.getElementById('txt3').style.width = '100vw'
-        document.getElementById('txt3').style.marginLeft = '10px'
         document.getElementById('txt3').style.fontSize = '20px'
         document.getElementById('txt3').style.width = '80vw'
         document.getElementById('txt3').style.marginTop = '-50px'
@@ -1044,11 +1045,67 @@
         document.getElementById('txt5').style.left = '50px'
         document.getElementById('txt5').style.top = '50px'
     
-    
-    
-    
-    
-    
+        document.getElementById('hoverLine2').style.display = 'none'
+        
+        document.getElementById('classContainer').style.flexDirection = 'row'
+        
+        document.getElementById('classContainer').style.backgroundColor = 'red'
+
+        document.getElementById('classContainer').style.width = '600px'
+
+        document.getElementById('classContainer').className = 'projectsContainer'
+
+        $('#webDevCard').appendTo('#mobileDivAboutPage')
+        document.getElementById('webDevCard').style.width = '250px'
+        document.getElementById('webDevCard').style.right = ''
+        document.getElementById('webDevCard').style.marginLeft = '20px'
+        document.getElementById('webDevCard').style.marginTop = '20px'
+        document.getElementById('webDevCard').style.marginBottom = '20px'
+        document.getElementById('webDevCard').style.height = '350px'
+        document.getElementById('webDevCardTitle').style.marginTop = '120px'
+        document.getElementById('webDevCardTitle').style.position = 'absolute'
+        document.getElementById('webDevCardDesc').style.marginTop = '160px'
+        document.getElementById('webDevCardDesc').style.position = 'absolute'
+        document.getElementById('webDevCardDesc').style.whiteSpace = 'normal'
+        document.getElementById('webDevCardDesc').style.width = '70%'
+        document.getElementById('webDevCardImg').style.position = 'absolute'
+        document.getElementById('webDevCardImg').style.width = '70px'
+
+        $('#appDevCard').appendTo('#mobileDivAboutPage')
+        document.getElementById('appDevCard').style.width = '250px'
+        document.getElementById('appDevCard').style.marginTop = '20px'
+        document.getElementById('appDevCard').style.marginBottom = '20px'
+        document.getElementById('appDevCard').style.height = '350px'
+        document.getElementById('appDevCardTitle').style.marginTop = '120px'
+        document.getElementById('appDevCardTitle').style.position = 'absolute'
+        document.getElementById('appDevCardDesc').style.marginTop = '160px'
+        document.getElementById('appDevCardDesc').style.position = 'absolute'
+        document.getElementById('appDevCardDesc').style.whiteSpace = 'normal'
+        document.getElementById('appDevCardDesc').style.width = '70%'
+        document.getElementById('appDevCardImg').style.position = 'absolute'
+        document.getElementById('appDevCardImg').style.width = '70px'
+
+        $('#graphicsDevCard').appendTo('#mobileDivAboutPage')
+        document.getElementById('graphicsDevCard').style.width = '250px'
+        document.getElementById('graphicsDevCard').style.marginTop = '20px'
+        document.getElementById('graphicsDevCard').style.marginBottom = '50px'
+        document.getElementById('graphicsDevCard').style.height = '350px'
+        document.getElementById('graphicsDevCardTitle').style.marginTop = '120px'
+        document.getElementById('graphicsDevCardTitle').style.position = 'absolute'
+        document.getElementById('graphicsDevCardDesc').style.marginTop = '160px'
+        document.getElementById('graphicsDevCardDesc').style.position = 'absolute'
+        document.getElementById('graphicsDevCardDesc').style.whiteSpace = 'normal'
+        document.getElementById('graphicsDevCardDesc').style.width = '70%'
+        document.getElementById('graphicsDevCardImg').style.position = 'absolute'
+        document.getElementById('graphicsDevCardImg').style.width = '70px'
+
+        document.getElementById('mainContent2').style.right = ''
+
+        document.getElementById('classContainer').style = 'overflow-x: hidden; overflow-y: scroll; white-space: nowrap; transition: 1s; width: 100%; margin: 0px; background-color: #1b2229; height: 80vh; position: absolute; top: 150px; border-radius: 20px;'
+        
+
+        $('#classContainer').appendTo('#classContWrapper')
+
     }
 
 
