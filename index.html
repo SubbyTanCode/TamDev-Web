@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">.
+
+
     <title id="title"  >Home - TamDev</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <!-- AU DARK IS OLD THEME -->
@@ -15,15 +17,21 @@
         
             <div  onmouseenter="menuTransform('leave')" class="mainContent" id="mainContent1" style="background-color: transparent; width: 90%; position: absolute; right: 50px; display: flex; justify-content: center; height: 100%; flex-direction: column;">
                 <h1 id="txt1" style="color: white; font-weight: 300; font-size: 30px;"></h1>
-                <h1 id="txt2" style="color: white; font-weight: 700; font-size: 90px; margin-top: 10px"></h1>
                 
-                <h1 id="txt3" style="color: white; font-size: 25px; font-weight: 600; margin-top: -30px"></h1>
+                <h1 id="txt2" style="color: white; font-weight: 700; font-size: 90px; margin-top: 10px;"></h1>
+
+                <div id="txt3center">
+                    <h1 id="txt3" style="color: white; font-size: 25px; font-weight: 600; margin-top: -30px;"></h1>
+                </div>
+
                 <h1 id="txt4" style="color: rgb(152, 152, 152); font-size: 20px; font-weight: 500; margin-top: 0px; width: 650px"></h1>
-                
+
                 <div style=" width: 350px; height: 80px; position: absolute; bottom: 50px;">
-                    <img onmouseenter="this.style.opacity = 1" onmouseleave="this.style.opacity = 0.8" onclick=" window.open('https://twitter.com/tamgamer97',' _blank') " title="Twitter Profile" id="TwitterIconRed" class="socialIcon" style="cursor: pointer; transition: 1s; opacity: 0; margin-top: 100px;" src="/Images/TwitterIconRed.png" >
-                    <img onmouseenter="this.style.opacity = 1" onmouseleave="this.style.opacity = 0.8" onclick=" window.open('https://github.com/TamGamer97',' _blank') " title="Github Profile" id="GithubIconRed" class="socialIcon" style="cursor: pointer; transition: 1s; opacity: 0; margin-top: 100px;" src="/Images/GithubiconRed.png" >
-                    <img onmouseenter="this.style.opacity = 1" onmouseleave="this.style.opacity = 0.8" onclick=" window.open('https://www.fiverr.com/tamgamer97',' _blank') " title="Fiverr Profile" id="FiverrIconRed" class="socialIcon" style="cursor: pointer; transition: 1s; opacity: 0; margin-top: 100px;" src="/Images/FiverrIconRed.png" >
+                    <div id="centerDivForIconsHome">
+                        <img onmouseenter="this.style.opacity = 1" onmouseleave="this.style.opacity = 0.8" onclick=" window.open('https://twitter.com/tamgamer97',' _blank') " title="Twitter Profile" id="TwitterIconRed" class="socialIcon" style="cursor: pointer; transition: 1s; opacity: 0; margin-top: 100px;" src="/Images/TwitterIconRed.png" >
+                        <img onmouseenter="this.style.opacity = 1" onmouseleave="this.style.opacity = 0.8" onclick=" window.open('https://github.com/TamGamer97',' _blank') " title="Github Profile" id="GithubIconRed" class="socialIcon" style="cursor: pointer; transition: 1s; opacity: 0; margin-top: 100px;" src="/Images/GithubiconRed.png" >
+                        <img onmouseenter="this.style.opacity = 1" onmouseleave="this.style.opacity = 0.8" onclick=" window.open('https://www.fiverr.com/tamgamer97',' _blank') " title="Fiverr Profile" id="FiverrIconRed" class="socialIcon" style="cursor: pointer; transition: 1s; opacity: 0; margin-top: 100px;" src="/Images/FiverrIconRed.png" >
+                    </div>
                 </div>
             </div>
     
@@ -287,7 +295,7 @@
 
             <div id="classContainer4" style="width: 100%; height: 70%; margin-top: 100px; background-color: none; display: flex; transition: 1s; justify-content: center; align-items: center;">
                 
-                <div id="webappmaintainCard" onClick="window.open('https://www.fiverr.com/s/z6ro6d', '_blank')" onmouseenter="this.style.width = '28%'; this.style.height = '100%' " onmouseleave="this.style.width = '25%'; this.style.height = '90%'   " style="width: 25%; height: 90%; cursor: pointer; margin-right: 20px; position: relative; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; transition: 1s; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                <div id="webappmaintainCard" onmouseenter="this.style.width = '28%'; this.style.height = '100%' " onmouseleave="this.style.width = '25%'; this.style.height = '90%'   " style="width: 25%; height: 90%; cursor: pointer; margin-right: 20px; position: relative; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; transition: 1s; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
                     <img src="/Images/WebDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
                     <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 44%; height: 8%; overflow: hidden; ">Web/App Maintenance</h1>
                     <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 58%; width: 92%; max-height: 40%; background-color: transparent; overflow: hidden; ">Streamline your website maintenance with this Monthly Subscription service. I will handle all the updates, ensuring your website remains secure, up-to-date, and visually appealing. You can message me 24/7 with any website updates/fixes. Say goodbye to the hassle of managing your website and focus on what matters most – your business. </h1>
@@ -298,7 +306,7 @@
 
                 </div>
 
-                <div id="webappdevCard" onClick="window.open('https://www.fiverr.com/s/z6ro6d', '_blank')" onmouseenter="this.style.width = '28%'; this.style.height = '100%' " onmouseleave="this.style.width = '25%'; this.style.height = '90%'   " style="width: 25%; height: 90%; cursor: pointer; margin-right: 20px; position: relative; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; transition: 1s; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                <div id="webappdevCard" onmouseenter="this.style.width = '28%'; this.style.height = '100%' " onmouseleave="this.style.width = '25%'; this.style.height = '90%'   " style="width: 25%; height: 90%; cursor: pointer; margin-right: 20px; position: relative; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; transition: 1s; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
                     <img src="/Images/AppDeveloperIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
                     <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 44%; height: 8%; overflow: hidden; ">Web/App Development</h1>
                     <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 58%; width: 92%; max-height: 40%; background-color: transparent; overflow: hidden; ">Supercharge your business with our affordable one-time payment web/app development service. I will create a stunning, customized responsive website or app that perfectly aligns with your brand or objectives. Get ready to impress your audience with a seamless user experience and a visually appealing design.</h1>
@@ -308,7 +316,7 @@
                     </div>   
                 </div>
 
-                <div id="graphicsdesignCard" onClick="window.open('https://www.fiverr.com/s/bW0o3P', '_blank')" onmouseenter="this.style.width = '28%'; this.style.height = '100%' " onmouseleave="this.style.width = '25%'; this.style.height = '90%'   " style="width: 25%; height: 90%; cursor: pointer; margin-right: 20px; position: relative; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; transition: 1s; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
+                <div id="graphicsdesignCard" onmouseenter="this.style.width = '28%'; this.style.height = '100%' " onmouseleave="this.style.width = '25%'; this.style.height = '90%'   " style="width: 25%; height: 90%; cursor: pointer; margin-right: 20px; position: relative; margin-left: 20px; border-radius: 20px; background-color: #20272F; display: flex; justify-content: center; align-items: start; transition: 1s; -webkit-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); box-shadow: 0px 6px 49px -7px rgba(0,0,0,0.82); opacity: 0; transition: 1s; " >
                     <img src="/Images/GraphicsDesignerIcon.png" style="width: 30%; object-fit: contain; margin-top: 30px;">
                     <h1 style="color: white; font-size: 150%; font-weight: 600; position: absolute; text-align: center; margin-top: 44%; height: 8%; overflow: hidden; ">Graphics Design</h1>
                     <h1 style="color: #B5B5B5; font-size: 100%; font-weight: 500; position: absolute; text-align: center; margin-top: 58%; width: 92%; max-height: 40%; background-color: transparent; overflow: hidden; ">Unlock the power of captivating visuals with our exceptional graphic design service. Whether you need stunning website and app designs, eye-catching posters, or impactful banners, our team of designers will bring your ideas to life. We combine creativity and expertise to deliver visually stunning designs that leave a lasting impression. Elevate your brand's aesthetics and stand out from the competition</h1>
@@ -524,6 +532,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/swiped-events/1.1.7/swiped-events.min.js" integrity="sha512-q2rGCiN6EL2X7aJwVzSD6E0GbpfcGSjipdpZ12lqArQfSMb/LTDXlSFZLrohrSanuRk2/oP96lb14NNgPCAZPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <script>
 
@@ -547,6 +556,8 @@
         alignment: 12.00,
         quantity: 2.00
     })
+
+    let isMobileMode = false 
 
     let txt5AboutComplte = false
     function reviewsAnim(txt)
@@ -628,7 +639,7 @@
             const txt1 = new TypeIt("#txt1", {
                 strings: "Hi, I'm",
                 speed: 50,
-                waitUntilVisible: true,
+                waitUntilVisible: false,
                 afterComplete: () => { homeAnim(2), txt1.destroy(true);}
             }).go();
         }
@@ -637,25 +648,25 @@
             new TypeIt("#txt2", {
                 strings: '<span style="color: #FF3333;">Tam</span>Dev',
                 speed: 70,
-                waitUntilVisible: true,
+                waitUntilVisible: false,
                 afterComplete: () => {homeAnim(3)}
             }).go();
         }
         if(txt == 3)
         {
             const txt3 = new TypeIt("#txt3", {
-                strings: 'UI/UX WEBSITE DESIGNER AND DEVELOPER',
+                strings: 'WEB/APP DEVELOPER AND PROGRAMMING TUTOR',
                 speed: 30,
-                waitUntilVisible: true,
-                afterComplete: () => {homeAnim(4); txt3.destroy(true);}
+                waitUntilVisible: false,
+                afterComplete: () => {if (!isMobileMode) {homeAnim(4);}else{ homeAnim(5);}; txt3.destroy(true);}
             }).go();
         }
         if(txt == 4)
         {
             const txt4 = new TypeIt("#txt4", {
-                strings: 'I make websites, apps, games and graphic designs like posters, banners and software designs.',
+                strings: "Freelancing Web/App Development, UI/UX and Graphic Designs. Also Programming Tutoring for all Levels! ",
                 speed: 20,
-                waitUntilVisible: true,
+                waitUntilVisible: false,
                 afterComplete: () => {txt4.destroy(true); homeAnim(5)}
             }).go();
         }
@@ -688,7 +699,7 @@
             const txt5 = new TypeIt("#txt5", {
                 strings: "What i Do",
                 speed: 80,
-                waitUntilVisible: true,
+                waitUntilVisible: false,
                 afterComplete: () => {txt5.destroy(true); aboutAnim(2)}
             }).go();
         }
@@ -815,7 +826,6 @@
 
         if(newPage == 2)
         {
-            console.log('e')
             aboutAnim(1)
         }
 
@@ -991,6 +1001,52 @@
         });
     }
 
+    if(window.screen.width <= 500)
+    {
+        onMobileMode()
+    }
+
+    function onMobileMode()
+    {
+        console.log('mobile mode')
+        isMobileMode = true
+
+        document.getElementById('hoverLine1').style.display = 'none'
+
+        document.getElementById('mainContent1').style.right = ''
+
+        document.getElementById('txt1').style.marginLeft = '30px'
+        
+        document.getElementById('txt2').style.textAlign = 'center'
+        document.getElementById('txt2').style.fontSize = '80px'
+
+        document.getElementById('txt2').style.display = 'flex'
+        document.getElementById('txt2').style.justifyContent = 'center'
+        document.getElementById('txt2').style.width = '100vw'
+
+        document.getElementById('txt3').style.textAlign = 'center'
+        document.getElementById('txt3').style.display = 'flex'
+        document.getElementById('txt3').style.justifyContent = 'center'
+        document.getElementById('txt3').style.width = '100vw'
+        document.getElementById('txt3').style.marginLeft = '10px'
+        document.getElementById('txt3').style.fontSize = '20px'
+        document.getElementById('txt3').style.width = '80vw'
+        document.getElementById('txt3').style.marginTop = '-50px'
+        document.getElementById('txt3center').style = 'display: flex; justify-content: center; width: 100vw; '
+
+        document.getElementById('centerDivForIconsHome').style = 'display: flex; justify-content: center; position: absolute; width: 100vw; '
+    
+        document.getElementById('txt5').style.fontSize = '50px'
+        document.getElementById('txt5').style.left = '50px'
+        document.getElementById('txt5').style.top = '50px'
+    
+    
+    
+    
+    
+    
+    }
+
 
     function dragableSlider(id)
     {
@@ -1108,6 +1164,43 @@
         changePage(1)
     }
 
+
+    //mobile swipes
+    document.getElementById("Home").addEventListener('swiped-up', function(e) {
+        changePage(2)
+    });
+    document.getElementById("Home").addEventListener('swiped-down', function(e) {
+    });
+
+
+    document.getElementById("About").addEventListener('swiped-up', function(e) {
+        changePage(3)
+    });
+    document.getElementById("About").addEventListener('swiped-down', function(e) {
+        changePage(1)
+    });
+
+
+    document.getElementById("Projects").addEventListener('swiped-up', function(e) {
+        changePage(4)
+    });
+    document.getElementById("Projects").addEventListener('swiped-down', function(e) {
+        changePage(2)
+    });
+
+    document.getElementById("Services").addEventListener('swiped-up', function(e) {
+        changePage(5)
+    });
+    document.getElementById("Services").addEventListener('swiped-down', function(e) {
+        changePage(3)
+    });
+
+    document.getElementById("Reviews").addEventListener('swiped-up', function(e) {
+    });
+    document.getElementById("Reviews").addEventListener('swiped-down', function(e) {
+        changePage(4)
+    });
+
 </script>
 </html>
 
@@ -1120,6 +1213,7 @@
         scroll-behavior: smooth;
 
         overflow: hidden;
+        overflow-x: hidden;
     }
     .page{
         scroll-snap-align: start;
