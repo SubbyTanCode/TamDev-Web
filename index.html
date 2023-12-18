@@ -6,7 +6,7 @@
 
 
     <title id="title"  >Home - TamDev</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js" integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- AU DARK IS OLD THEME -->
 </head>
@@ -171,7 +171,7 @@
                 <h1 id="txt6" style="color: #FF3333; font-weight: 700; font-size: 90px; position: absolute; top: -20px;"></h1>
     
     
-                <div id="projectsContainer" class="projectsContainer" style="margin-top: 50px; height: 65vh; display: flex; justify-content: center; flex-direction: column; gap: 20px; flex-wrap: wrap;" onmouseenter="isOnProjectsScroll = true" onmouseleave="isOnProjectsScroll = false" >
+                <div id="projectsContainer" class="projectsContainer" style="margin-top: 50px; height: 65vh;display: flex; justify-content: center; flex-direction: column; gap: 20px; flex-wrap: wrap;" onmouseenter="isOnProjectsScroll = true" onmouseleave="isOnProjectsScroll = false" >
                     
 
                     <!-- <div id="projects1" onclick="projectsAnim('3' + 1)" class="projectCard" style="position: relative; opacity: 0; right: 100px; opacity: 0; width: 950px; height: 160px; background-color: #1C1B21; display: flex; align-items: center;">
@@ -191,6 +191,12 @@
                                 <h1 style="color: white; font-size: 130%; font-weight: 600; position: relative; top: 2%; left: 9vw; margin: 15px; transition: 1s;">Ball Override</h1>
                                 <h1 id="projDesc" style="color: #B5B5B5; font-size: 90%; font-weight: 500; position: relative; left: 9vw; margin: 15px; margin-top: -5px; transition: 1s; text-overflow: ellipsis; white-space: pre-wrap; width: 65%; height: 90%; overflow: hidden; ">Ball Override is a .io type of game where you can build and customize your own ball and defeat the huge bosses or just do multiplayer with your friends. This game is built for everyone of ages and will contain consistent weekly updates decided by the Ball Override community. This Game also is inspired by games such as Slither.io, Paper.io and most of the io type games and snake its free with a few ads and contains cheep in-app purchases.Contact the developer on twitter @TamGamer97 </h1>
                             </div>
+
+                        <div style="position: absolute; right: 50px; opacity: 0; transition: 1s; width: 15%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 15px">
+                            <img src="/Images/OnlineIcon.png" class="projectLinks" onclick="window.open('https://balloverride.netlify.app/', '_blank').focus();" style="width: 30px; height: 30px;">
+                            <img src="/Images/PlayStoreIcon.png" class="projectLinks" onclick="window.open('https://play.google.com/store/apps/details?id=com.TamGamer.BallOverride&hl=en_GB&gl=US', '_blank').focus();" style="width: 30px; height: 30px;">
+                            <img src="/Images/desktopIcon.png" class="projectLinks" onclick="window.open('https://tamgamer97.itch.io/balloverride', '_blank').focus();" style="width: 30px; height: 30px;">
+                        </div>
                     </div>
 
                     <div class="projectCard" id="projects2" onmouseenter="increaseProjectSize(2);" onmouseleave="decreaseProjectSize(2)" onclick="projectsAnim('3' + 2)" style="opacity: 0; transition: 1s; position: relative; right: 100px; margin-top: 10px; margin-left: 30px; width: 40%; height: 19.5vh; background-color: #1C1B21; display: flex; align-items: center; flex-direction: row;  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.92);">
@@ -201,6 +207,12 @@
                                 <h1 style="color: white; font-size: 130%; font-weight: 600; position: relative; top: 2%; left: 9vw; margin: 15px; transition: 1s;">Supreme Flash</h1>
                                 <h1 id="projDesc" style="color: #B5B5B5; font-size: 90%; font-weight: 500; position: relative; left: 9vw; margin: 15px; margin-top: -5px; transition: 1s; text-overflow: ellipsis; white-space: pre-wrap; width: 65%; height: 90%; overflow: hidden; ">Ball Override is a .io type of game where you can build and customize your own ball and defeat the huge bosses or just do multiplayer with your friends. This game is built for everyone of ages and will contain consistent weekly updates decided by the Ball Override community. This Game also is inspired by games such as Slither.io, Paper.io and most of the io type games and snake its free with a few ads and contains cheep in-app purchases.Contact the developer on twitter @TamGamer97 </h1>
                             </div>
+
+                        <div style="position: absolute; right: 50px; opacity: 0; transition: 1s; width: 15%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 15px">
+                            <img src="/Images/OnlineIcon.png" class="projectLinks" onclick="callAlert('Alert', 'Supreme Flash' + ' is not on published yet')" style="width: 30px; height: 30px; opacity: 0.5;">
+                            <img src="/Images/PlayStoreIcon.png" class="projectLinks" onclick="callAlert('Alert', 'Supreme Flash' + ' is not on the Play Store yet')" style="width: 30px; height: 30px; opacity: 0.5;">
+                            <img src="/Images/desktopIcon.png" class="projectLinks" onclick="callAlert('Alert', 'Supreme Flash' + ' is not published yet')" style="width: 30px; height: 30px; opacity: 0.5;">
+                        </div>
                     </div>
 
                     <div class="projectCard" id="projects3" onmouseenter="increaseProjectSize(3);" onmouseleave="decreaseProjectSize(3)" onclick="projectsAnim('3' + 3)" style="opacity: 0; transition: 1s; position: relative; right: 100px; margin-top: 10px; margin-left: 30px; width: 50%; height: 19.5vh; background-color: #1C1B21; display: flex; align-items: center; flex-direction: row;  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.92);">
@@ -211,6 +223,12 @@
                                 <h1 style="color: white; font-size: 130%; font-weight: 600; position: relative; top: 2%; left: 9vw; margin: 15px; transition: 1s;">Salah Times</h1>
                                 <h1 id="projDesc" style="color: #B5B5B5; font-size: 90%; font-weight: 500; position: relative; left: 9vw; margin: 15px; margin-top: -5px; transition: 1s; text-overflow: ellipsis; white-space: pre-wrap; width: 65%; height: 90%; overflow: hidden; ">Ball Override is a .io type of game where you can build and customize your own ball and defeat the huge bosses or just do multiplayer with your friends. This game is built for everyone of ages and will contain consistent weekly updates decided by the Ball Override community. This Game also is inspired by games such as Slither.io, Paper.io and most of the io type games and snake its free with a few ads and contains cheep in-app purchases.Contact the developer on twitter @TamGamer97 </h1>
                             </div>
+                        
+                        <div style="position: absolute; right: 50px; opacity: 0; transition: 1s; width: 15%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 15px">
+                            <img src="/Images/OnlineIcon.png" class="projectLinks" onclick="callAlert('Alert', 'Salah Times' + ' is not on the web yet')" style="width: 30px; height: 30px; opacity: 0.5;">
+                            <img src="/Images/PlayStoreIcon.png" class="projectLinks" onclick="window.open('https://play.google.com/store/apps/details?id=com.tamdev.salahtimes&hl=en_GB&gl=US', '_blank').focus();" style="width: 30px; height: 30px;">
+                            <img src="/Images/desktopIcon.png" class="projectLinks" onclick="callAlert('Alert', 'Salah Times' + ' is not on desktop yet')" style="width: 30px; height: 30px; opacity: 0.5;">
+                        </div>
                     </div>
 
                     <div class="projectCard" id="projects4" onmouseenter="increaseProjectSize(4);" onmouseleave="decreaseProjectSize(4)" onclick="projectsAnim('3' + 4)" style="opacity: 0; transition: 1s; position: relative; right: 100px; margin-top: 10px; margin-left: 30px; left: -10%; width: 45%; height: 19.5vh; background-color: #1C1B21; display: flex; align-items: center; flex-direction: row;  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.92);">
@@ -221,6 +239,40 @@
                                 <h1 style="color: white; font-size: 130%; font-weight: 600; position: relative; top: 2%; left: 9vw; margin: 15px; transition: 1s;">Programming Course</h1>
                                 <h1 id="projDesc" style="color: #B5B5B5; font-size: 90%; font-weight: 500; position: relative; left: 9vw; margin: 15px; margin-top: -5px; transition: 1s; text-overflow: ellipsis; white-space: pre-wrap; width: 65%; height: 90%; overflow: hidden; ">Ball Override is a .io type of game where you can build and customize your own ball and defeat the huge bosses or just do multiplayer with your friends. This game is built for everyone of ages and will contain consistent weekly updates decided by the Ball Override community. This Game also is inspired by games such as Slither.io, Paper.io and most of the io type games and snake its free with a few ads and contains cheep in-app purchases.Contact the developer on twitter @TamGamer97 </h1>
                             </div>
+
+                        <div style="position: absolute; right: 50px; opacity: 0; transition: 1s; width: 15%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 15px">
+                            <img src="/Images/OnlineIcon.png" class="projectLinks" onclick="window.open('https://www.udemy.com/course/ultimate-python-beginners-course/', '_blank').focus();" style="width: 30px; height: 30px;">
+                        </div>
+                    </div>
+
+                    <div class="projectCard" id="projects5" onmouseenter="increaseProjectSize(5);" onmouseleave="decreaseProjectSize(5)" onclick="projectsAnim('3' + 4)" style="opacity: 0; transition: 1s; position: relative; right: 100px; margin-top: 10px; margin-left: 30px; width: 45%; height: 19.5vh; background-color: #1C1B21; display: flex; align-items: center; flex-direction: row;  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.92);">
+                        <div style="position: absolute; top: 0px; left: 0px; width: 33vw; height: 19.5vh; display: flex; align-items: center; flex-direction: row; ">
+                            <img class="projectImg" src="/Images/youtubelogo.png " style="width: 24%; height: 85%; position: absolute; left: 15px; transition: 1s;">
+                        </div>
+                            <div style="display: flex; flex-direction: column; height: 100%; width: 100%; position: absolute; top: 0px; left: 0px;">
+                                <h1 style="color: white; font-size: 130%; font-weight: 600; position: relative; top: 2%; left: 9vw; margin: 15px; transition: 1s;">Youtube Channel</h1>
+                                <h1 id="projDesc" style="color: #B5B5B5; font-size: 90%; font-weight: 500; position: relative; left: 9vw; margin: 15px; margin-top: -5px; transition: 1s; text-overflow: ellipsis; white-space: pre-wrap; width: 65%; height: 90%; overflow: hidden; ">Ball Override is a .io type of game where you can build and customize your own ball and defeat the huge bosses or just do multiplayer with your friends. This game is built for everyone of ages and will contain consistent weekly updates decided by the Ball Override community. This Game also is inspired by games such as Slither.io, Paper.io and most of the io type games and snake its free with a few ads and contains cheep in-app purchases.Contact the developer on twitter @TamGamer97 </h1>
+                            </div>
+
+                        <div style="position: absolute; right: 50px; opacity: 0; transition: 1s; width: 15%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 15px">
+                            <img src="/Images/OnlineIcon.png" class="projectLinks" onclick="window.open('https://www.youtube.com/@programdeveloper', '_blank').focus();" style="width: 30px; height: 30px;">
+                        </div>
+                    </div>
+
+                    <div class="projectCard" id="projects6" onmouseenter="increaseProjectSize(6);" onmouseleave="decreaseProjectSize(6)" onclick="projectsAnim('3' + 4)" style="opacity: 0; transition: 1s; position: relative; right: 100px; margin-top: 10px; left: -15%; margin-left: 30px; width: 45%; height: 19.5vh; background-color: #1C1B21; display: flex; align-items: center; flex-direction: row;  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.92);">
+                        <div style="position: absolute; top: 0px; left: 0px; width: 33vw; height: 19.5vh; display: flex; align-items: center; flex-direction: row; ">
+                            <img class="projectImg" src="/Images/programmingCourse.png " style="width: 24%; height: 85%; position: absolute; left: 15px; transition: 1s;">
+                        </div>
+                            <div style="display: flex; flex-direction: column; height: 100%; width: 100%; position: absolute; top: 0px; left: 0px;">
+                                <h1 style="color: white; font-size: 130%; font-weight: 600; position: relative; top: 2%; left: 9vw; margin: 15px; transition: 1s;">GeoCountry Game</h1>
+                                <h1 id="projDesc" style="color: #B5B5B5; font-size: 90%; font-weight: 500; position: relative; left: 9vw; margin: 15px; margin-top: -5px; transition: 1s; text-overflow: ellipsis; white-space: pre-wrap; width: 65%; height: 90%; overflow: hidden; ">Ball Override is a .io type of game where you can build and customize your own ball and defeat the huge bosses or just do multiplayer with your friends. This game is built for everyone of ages and will contain consistent weekly updates decided by the Ball Override community. This Game also is inspired by games such as Slither.io, Paper.io and most of the io type games and snake its free with a few ads and contains cheep in-app purchases.Contact the developer on twitter @TamGamer97 </h1>
+                            </div>
+
+                        <div style="position: absolute; right: 50px; opacity: 0; transition: 1s; width: 15%; height: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; gap: 15px">
+                            <img src="/Images/OnlineIcon.png" class="projectLinks" onclick="window.open('https://www.udemy.com/course/ultimate-python-beginners-course/', '_blank').focus();" style="width: 30px; height: 30px;">
+                            <img src="/Images/PlayStoreIcon.png" class="projectLinks" onclick="callAlert('Alert', 'GeoCountry' + ' is not on the Playstore yet')" style="width: 30px; height: 30px; opacity: 0.5;">
+                            <img src="/Images/desktopIcon.png" class="projectLinks" onclick="callAlert('Alert', 'GeoCountry' + ' is not on Desktop yet')" style="width: 30px; height: 30px; opacity: 0.5;">
+                        </div>
                     </div>
     
                     <!-- <div id="projects2" onclick="projectsAnim('3' + 2)" class="projectCard" style="position: relative; opacity: 0; right: 100px;">
@@ -599,6 +651,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
 <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/swiped-events/1.1.7/swiped-events.min.js" integrity="sha512-q2rGCiN6EL2X7aJwVzSD6E0GbpfcGSjipdpZ12lqArQfSMb/LTDXlSFZLrohrSanuRk2/oP96lb14NNgPCAZPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://unpkg.com/scrollto-with-animation/dist/scrollto-with-animation.min.js"></script>
 
 <script>
 
@@ -631,12 +684,40 @@
         }
         currentW = (document.getElementById('projects' + project).style.width) 
         currentH = (document.getElementById('projects' + project).style.height) 
-        document.getElementById('projects' + project).style.width = (parseInt(currentW.split('%')[0]) + 20) + '%'
-        document.getElementById('projects' + project).style.height = (parseInt(currentH.split('vh')[0]) + 10) + 'vh'
+        document.getElementById('projects' + project).style.width = ((parseInt(currentW.split('%')[0])) / 100) * (screen.width * (90/100)) + 100 + 'px'
+        document.getElementById('projects' + project).style.height = (((parseInt(currentH.split('vh')[0])) / 100) * (document.documentElement.clientHeight)) + 60 + 'px'
+
+        el = document.getElementById('projects' + project).offsetLeft - 20
+
+        document.getElementById('projects' + project).children[2].style.opacity = 1
+        document.getElementById('projects' + project).children[2].style.right = 0 + 'px'
+
+
+        // document.getElementById('projectsContainer').scrollTo({ behavior: "smooth", left:el  })
+        // document.getElementById('projects' + project).scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'})
+        scrollToWithAnimation(
+            document.getElementById('projectsContainer'), // element to scroll
+            'scrollLeft', // direction to scroll
+            el, // target scrollY (0 means top of the page)
+            1250, // duration in ms
+            'easeInQuad', /* easeInQuad
+                Can be a name of the list of 'Possible easing equations' or a callback
+                that defines the ease. # http://gizma.com/easing/
+            */
+            function () { // callback function that runs after the animation (optional)
+            console.log('done!')
+            }
+        );
 
         if(project == 2)
         {
             document.getElementById('projects' + 4).style.left = 0 + '%'
+            document.getElementById('projects' + 6).style.left = 0 + '%'
+        }
+
+        if(project == 4)
+        {
+            document.getElementById('projects' + 6).style.left = 0 + '%'
         }
     }
 
@@ -646,14 +727,29 @@
         {
             return
         }
-        newAmountW = parseInt((document.getElementById('projects' + project).style.width).split('%')[0])
-        document.getElementById('projects' + project).style.width = (newAmountW - 20) + '%'
+        newAmountW = parseInt((document.getElementById('projects' + project).style.width).split('px')[0])
+        document.getElementById('projects' + project).style.width = (((newAmountW - 100) / (screen.width * (90/100))) * 100) + '%'
 
         newAmountH = parseInt((document.getElementById('projects' + project).style.height).split('vh')[0])
-        document.getElementById('projects' + project).style.height = (newAmountH - 10) + 'vh'
+        document.getElementById('projects' + project).style.height = (((newAmountH - 60) / (document.documentElement.clientHeight)) * 100) + 0.6463 + 'vh'
+        
+        document.getElementById('projects' + project).children[2].style.opacity = 0
+        document.getElementById('projects' + project).children[2].style.right = 30 + 'px'
+
+
+
         if(project == 2)
         {
             document.getElementById('projects' + 4).style.left = -10 + '%'
+            document.getElementById('projects' + 6).style.left = -15 + '%'
+            
+            document.getElementById('projects' + project).style.width = ((parseInt(currentW.split('%')[0])) + 0.049) + '%'
+        }
+        if(project == 4)
+        {
+            document.getElementById('projects' + 6).style.left = -15 + '%'
+
+            document.getElementById('projects' + project).style.width = ((parseInt(currentW.split('%')[0])) + 0.0347) + '%'
         }
 
     }
@@ -1493,7 +1589,7 @@
     
 
         /* scroll bar */ 
-        *::-webkit-scrollbar {
+        /* *::-webkit-scrollbar {
             width: 12px;
         }
 
@@ -1506,11 +1602,26 @@
             background-color: #1c1b21;
             border-radius: 20px;
             border: 3px solid rgb(0, 0, 0);
+        } */
+
+        *::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        *::-webkit-scrollbar-track {
+            background: transparent;
+            border-radius: 20px;
+        }
+
+        *::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            border-radius: 20px;
+            border: transparent;
         }
 
 
     .projectCard:hover{
-        cursor: pointer;
+        /* cursor: pointer; */
     }
     .projectImg:hover{
         -webkit-box-shadow: 0px 6px 30px 1px rgba(0,0,0,0.82); -moz-box-shadow: 0px 6px 30px 1px rgba(0,0,0,0.82); box-shadow: 0px 6px 30px 1px rgba(0,0,0,0.82);
@@ -1539,6 +1650,10 @@
         -webkit-box-shadow: 0px 3px 30px 1px rgba(0,0,0,0.82); -moz-box-shadow: 0px 3px 30px 1px rgba(0,0,0,0.82); box-shadow: 0px 3px 30px 1px rgba(0,0,0,0.82);
 
         background-color: #171C22;
+    }
+
+    .projectLinks{
+        cursor: pointer;
     }
 
 </style>
